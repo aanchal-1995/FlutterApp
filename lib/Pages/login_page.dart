@@ -1,5 +1,5 @@
 import 'package:awesome_app/Pages/home_page.dart';
-import 'package:awesome_app/bg_image.dart';
+import 'package:awesome_app/widgets/bg_image.dart';
 import 'package:awesome_app/utils/Constants.dart';
 
 import 'package:flutter/material.dart';

@@ -1,6 +1,7 @@
 // import 'dart:js';
 
 import 'package:awesome_app/Pages/home_page.dart';
+import 'package:awesome_app/Pages/home_page_fb.dart';
 import 'package:awesome_app/utils/Constants.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -14,8 +15,9 @@ Future main() async {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "AWESOME APP",
-    home:
-        Constants.prefs.getBool("LoggedIn") == true ? HomePage() : LoginPage(),
+    home: Constants.prefs.getBool("LoggedIn") == true
+        ? HomePageFB()
+        : LoginPage(),
     theme: ThemeData(primarySwatch: Colors.amber),
     routes: {
       "/login": (context) => LoginPage(),
